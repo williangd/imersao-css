@@ -5,10 +5,10 @@
 }
 
 body {
-  background-color: steelblue;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Roboto', sans-serif;
   height: 100vh;
   font-size: 12px;
+  background-color: whitesmoke;
 }
 
 @media (min-width: 400px) {
@@ -24,6 +24,7 @@ body {
 }
 
 header {
+  background-color: teal;
   height: 100vh;
   display: flex;
   justify-content: center;
@@ -55,11 +56,13 @@ header {
 a {
   color: teal;
   text-decoration: none;
+  transition: background-color 0.5s;
 }
 
 .menu a:hover {
   color: white;
   background-color: teal;
+  opacity: 0.6;
 }
 
 .site-title,
@@ -74,8 +77,52 @@ a {
 
 .site-subtitle {
   font-style: italic;
+  line-height: 1.8em;
+}
+
+.portfolio {
+  padding: 2em;
+  background-color: whitesmoke;
+  height: 100vh;
+}
+
+.portfolio .grid {
+  display: grid;
+  gap: 1em;
+  height: calc(100vh - 48px - 5em);
+}
+
+@media (min-width: 560px) {
+  .portfolio .grid {
+    grid-template-columns: repeat(2, 240px);
+    justify-content: center;
+  }
+}
+
+@media (min-width: 880px) {
+  .portfolio .grid {
+    grid-template-columns: repeat(3, 240px);
+    align-content: center;
+  }
+}
+
+.portfolio figure {
+  text-align: center;
+}
+
+.portfolio figcaption {
+  color: teal;
+}
+
+.portfolio h2 {
+  line-height: 1.8em;
+  font-size: 2em;
+  color: teal;
 }
 
 .img-portfolio {
-  width: 400px;
+  width: 240px;
+  height: 180px;
+  object-fit: cover;
+  object-position: left bottom;
 }
