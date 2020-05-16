@@ -36,6 +36,7 @@ header {
   position: fixed;
   width: 100vw;
   top: 0;
+  z-index: 1;
 }
 
 .menu li {
@@ -49,20 +50,37 @@ header {
 }
 
 .menu a {
-  padding: 10px;
+  padding: 10px 20px;
   display: inline-block;
+  transition: background-color 0.5s, color 0.5s;
+  color: teal;
 }
 
 a {
-  color: teal;
   text-decoration: none;
-  transition: background-color 0.5s;
 }
 
-.menu a:hover {
+.menu a:hover,
+.menu a:active {
   color: white;
   background-color: teal;
   opacity: 0.6;
+}
+
+.titulo {
+  animation: 1s ease 1s animacaoTitulo;
+}
+
+@keyframes animacaoTitulo {
+  from {
+    transform: scale(0.2) translateY(50vh);
+    opacity: 0;
+  }
+
+  to {
+    transform: scale(1) translateY(0);
+    opacity: 1;
+  }
 }
 
 .site-title,
@@ -81,28 +99,34 @@ a {
 }
 
 .portfolio {
-  padding: 2em;
-  background-color: whitesmoke;
-  height: 100vh;
+  padding: 1.8em;
+  min-height: 100vh;
+}
+
+.contato h2,
+.portfolio h2 {
+  color: whitesmoke;
+  margin-bottom: 1.5em;
+  font-size: 2em;
 }
 
 .portfolio .grid {
   display: grid;
-  gap: 1em;
-  height: calc(100vh - 48px - 5em);
+  gap: 2em;
 }
 
 @media (min-width: 560px) {
   .portfolio .grid {
-    grid-template-columns: repeat(2, 240px);
-    justify-content: center;
+    grid-template-columns: 240px 240px;
   }
 }
 
 @media (min-width: 880px) {
   .portfolio .grid {
-    grid-template-columns: repeat(3, 240px);
+    grid-template-columns: repeat(3, 260px);
     align-content: center;
+    justify-content: center;
+    height: calc(100vh - 8em - 48px);
   }
 }
 
@@ -114,6 +138,7 @@ a {
   color: teal;
 }
 
+.contato h2,
 .portfolio h2 {
   line-height: 1.8em;
   font-size: 2em;
@@ -125,4 +150,34 @@ a {
   height: 180px;
   object-fit: cover;
   object-position: left bottom;
+  transition: transform 500ms;
+}
+
+.img-portfolio:hover {
+  transform: scale(1.2) rotate(2deg);
+}
+
+.contato {
+  padding: 1.8em;
+  height: 300px;
+  background-color: teal;
+}
+
+.contato h2,
+.contato a {
+  color: whitesmoke;
+}
+
+.contato a {
+  font-size: 3em;
+  transition: text-shadow 500ms;
+}
+
+.contato a:hover,
+.contato a:active {
+  text-shadow: 0px 0px 10px rgba(255, 255, 255, 0.5);
+}
+
+.contato .icons {
+  text-align: center;
 }

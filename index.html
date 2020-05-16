@@ -9,22 +9,26 @@
       href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
       rel="stylesheet"
     />
+    <script
+      src="https://kit.fontawesome.com/31413a747c.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
     <header>
       <nav class="menu">
         <ul>
           <li><a href="#">Sobre</a></li>
-          <li><a href="#">Projetos</a></li>
-          <li><a href="#">Contato</a></li>
+          <li><a href="#projetos">Projetos</a></li>
+          <li><a href="#contato">Contato</a></li>
         </ul>
       </nav>
-      <div>
+      <div class="titulo">
         <h1 class="site-title">Willian Oliveira</h1>
         <h2 class="site-subtitle">Front-end Developer</h2>
       </div>
     </header>
-    <section class="portfolio">
+    <section class="portfolio" id="projetos">
       <h2>Projetos</h2>
       <div class="grid">
         <figure>
@@ -55,6 +59,20 @@
           <img class="img-portfolio" src="./img/hobby.png" alt="Handstand" />
           <figcaption>Handstand</figcaption>
         </figure>
+      </div>
+    </section>
+    <section class="contato" id="contato">
+      <h2>Contato</h2>
+      <div class="grid icons">
+        <a target="_blank" href="https://github.com/williangd">
+          <i class="fab fa-github"></i>
+        </a>
+        <a target="_blank" href="https://twitter.com/williangd">
+          <i class="fab fa-twitter"></i>
+        </a>
+        <a target="_blank" href="https://linkedin.com/in/williangd">
+          <i class="fab fa-linkedin"></i>
+        </a>
       </div>
     </section>
   </body>
