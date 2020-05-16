@@ -1,11 +1,40 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
   background-color: steelblue;
   font-family: Arial, Helvetica, sans-serif;
   height: 100vh;
+  font-size: 12px;
+}
+
+@media (min-width: 400px) {
+  body {
+    font-size: 14px;
+  }
+}
+
+@media (min-width: 600px) {
+  body {
+    font-size: 18px;
+  }
+}
+
+header {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .menu {
   background-color: white;
+  position: fixed;
+  width: 100vw;
+  top: 0;
 }
 
 .menu li {
@@ -16,7 +45,11 @@ body {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  height: 36px;
+}
+
+.menu a {
+  padding: 10px;
+  display: inline-block;
 }
 
 a {
@@ -24,8 +57,9 @@ a {
   text-decoration: none;
 }
 
-a:hover {
-  text-decoration: underline;
+.menu a:hover {
+  color: white;
+  background-color: teal;
 }
 
 .site-title,
@@ -34,6 +68,14 @@ a:hover {
   color: whitesmoke;
 }
 
+.site-title {
+  font-size: 3em;
+}
+
 .site-subtitle {
   font-style: italic;
+}
+
+.img-portfolio {
+  width: 400px;
 }
