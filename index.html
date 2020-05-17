@@ -17,8 +17,8 @@
   <body>
     <header>
       <nav class="menu">
-        <ul>
-          <li><a href="#">Sobre</a></li>
+        <ul class="container">
+          <li><a href="#sobre">Sobre</a></li>
           <li><a href="#projetos">Projetos</a></li>
           <li><a href="#contato">Contato</a></li>
         </ul>
@@ -28,51 +28,118 @@
         <h2 class="site-subtitle">Front-end Developer</h2>
       </div>
     </header>
+    <section class="sobre" id="sobre">
+      <div class="container">
+        <h2>Sobre</h2>
+        <figure class="avatar">
+          <img
+            src="https://pbs.twimg.com/profile_images/1022873833580228608/sb5iCecP_400x400.jpg"
+            alt="Foto Willian"
+          />
+        </figure>
+        <p>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolor
+          doloribus ad harum autem magnam voluptatem provident, soluta animi
+          odio beatae nam molestias porro minus adipisci molestiae, fuga vel
+          illum maxime.
+        </p>
+        <p>
+          Quos dicta, officia perferendis alias in unde eos facilis voluptate
+          illum amet molestiae eius obcaecati velit nesciunt cupiditate sit
+          ipsam doloribus nulla harum reprehenderit porro, neque ex tenetur qui!
+          Totam?
+        </p>
+        <p>
+          Minus exercitationem facilis omnis error necessitatibus, incidunt
+          totam eligendi esse numquam non labore iure, pariatur mollitia
+          corrupti ad veniam dolore nobis suscipit a fugiat voluptatem quibusdam
+          dignissimos sequi. Deserunt, assumenda.
+        </p>
+       
+      </div>
+    </section>
     <section class="portfolio" id="projetos">
-      <h2>Projetos</h2>
-      <div class="grid">
-        <figure>
-          <img class="img-portfolio" src="./img/alura.png" alt="Alura" />
-          <figcaption>Alura</figcaption>
-        </figure>
-        <figure>
-          <img class="img-portfolio" src="./img/caelum.png" alt=">Caelum" />
-          <figcaption>Caelum</figcaption>
-        </figure>
-        <figure>
-          <img
-            class="img-portfolio"
-            src="./img/hispters.png"
-            alt="Hipsters.Tech"
-          />
-          <figcaption>Hipsters.Tech</figcaption>
-        </figure>
-        <figure>
-          <img
-            class="img-portfolio"
-            src="./img/likeaboss.png"
-            alt="Like a Boss"
-          />
-          <figcaption>Like a Boss</figcaption>
-        </figure>
-        <figure>
-          <img class="img-portfolio" src="./img/hobby.png" alt="Handstand" />
-          <figcaption>Handstand</figcaption>
-        </figure>
+      <div class="container">
+        <h2>Projetos</h2>
+        <div class="grid">
+		  
+          <div class="flip-card">
+            <div class="card">
+              <figure class="card-front">
+                <img class="img-portfolio" src="./img/alura.png" alt="Alura">
+              </figure>
+              <div class="card-back">
+                <h3>Alura</h3>
+              </div>
+            </div>
+          </div>
+  
+          <div class="flip-card">
+            <div class="card">
+              <figure class="card-front">
+                <img class="img-portfolio" src="./img/caelum.png" alt="Caelum">
+              </figure>
+              <div class="card-back">
+                <h3>Caelum</h3>
+              </div>
+            </div>
+          </div>
+  
+          <div class="flip-card">
+            <div class="card">
+              <figure class="card-front">
+                <img class="img-portfolio" src="./img/hispters.png" alt="Hipsters.Tech">
+              </figure>
+              <div class="card-back">
+                <h3>Hipsters.Tech</h3>
+              </div>
+            </div>
+          </div>
+  
+          <div class="flip-card">
+            <div class="card">
+              <figure class="card-front">
+                <img class="img-portfolio" src="./img/likeaboss.png" alt="Like a Boss">
+              </figure>
+              <div class="card-back">
+                <h3>Like a Boss</h3>
+              </div>
+            </div>
+          </div>
+  
+          <div class="flip-card">
+            <div class="card">
+              <figure class="card-front">
+                <img class="img-portfolio" src="./img/hobby.png" alt="Handstand">
+              </figure>
+            <div class="card-back">
+              <h3>Handstand</h3>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
     <section class="contato" id="contato">
-      <h2>Contato</h2>
-      <div class="grid icons">
-        <a target="_blank" href="https://github.com/williangd">
-          <i class="fab fa-github"></i>
-        </a>
-        <a target="_blank" href="https://twitter.com/williangd">
-          <i class="fab fa-twitter"></i>
-        </a>
-        <a target="_blank" href="https://linkedin.com/in/williangd">
-          <i class="fab fa-linkedin"></i>
-        </a>
+      <div class="container">
+        <h2>Contato</h2>
+        <div class="grid icons">
+          <a target="_blank" href="https://github.com/williangd">
+            <i class="fab fa-github"></i>
+          </a>
+          <a target="_blank" href="https://twitter.com/williangd">
+            <i class="fab fa-twitter"></i>
+          </a>
+          <a target="_blank" href="https://linkedin.com/in/williangd">
+            <i class="fab fa-linkedin"></i>
+          </a>
+        </div>
+        <p class="imersao-css">
+          Este site foi construído durante a
+          <a href="https://www.alura.com.br/imersao-css/" target="_blank"
+            >Imersão CSS da Alura</a
+          >
+          ;)
+        </p>
       </div>
     </section>
   </body>
